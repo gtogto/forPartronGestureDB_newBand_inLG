@@ -1,0 +1,647 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    android:visibility="visible"
+    android:background="@color/cardview_dark_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:id="@+id/linearLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_device_address"
+            android:textSize="18sp" />
+
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/device_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_state"
+            android:textSize="18sp" />
+
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/connection_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/disconnected"
+            android:textSize="18sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/setting_01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/ManboUpdateBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="uMS"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/PPGUpdateBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="uPS"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/SleepUpdateBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="uSS"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/PPGBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="uPPG"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/BaroBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="uBARO"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/Setting_02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/ExerciseStartBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="eSTART"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/ExerciseStopBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="eSTOP"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/ExerciseSyncBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="eSYNC"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/ExerciseUpdateBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="eUPDATE"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/Setting_03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/ConnectionBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sCON"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/RTCBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sRTC"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/UserProfileBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sPRO"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/LanguageBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sLAN"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/UnitBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sUNIT"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/Setting_04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/VersionBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sVER"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/UserPPGBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sUPPG"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/SleepTimeBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sSTIME"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/PPGIntervalBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sPITV"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/ExerciseDisplayBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sEDI"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/Setting_05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/CallBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CALL"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/CallAcceptBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ACALL"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/SMSBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SMS"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/GoalBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GOAL"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/AppNotiBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="APP"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_data"
+            android:textSize="18sp" />
+
+        <Space
+            android:id="@+id/space3"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/imageView_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/sd_scroll"
+            android:layout_marginEnd="24dp"
+            android:layout_toStartOf="@+id/relativeLayout"
+            android:src="@drawable/linie_albastra_v" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/imageView_1">
+
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="500dp"
+                android:layout_height="30dp"
+                android:orientation="horizontal">
+
+
+                <RadioButton
+                    android:id="@+id/radioButton_side"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="17dp"
+                    android:checked="false"
+                    android:text="SIDE" />
+
+                <RadioButton
+                    android:id="@+id/radioButton_up"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="UP" />
+
+                <RadioButton
+                    android:id="@+id/radioButton_front"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="FRONT" />
+
+                <RadioButton
+                    android:id="@+id/radioButton_clock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="CLOCK" />
+
+            </RadioGroup>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="600dp"
+            android:layout_height="350dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/relativeLayout3"
+            android:layout_marginEnd="45dp"
+            android:layout_marginTop="17dp"
+            android:background="@color/cardview_light_background">
+
+            <Button
+                android:id="@+id/figure_layer_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/figure_layer_2"
+                android:layout_alignParentStart="true"
+                android:layout_alignTop="@+id/cl_line"
+                android:layout_marginTop="14dp"
+                android:text="SIDE location"
+                android:textSize="20sp"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/figure_layer_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/figure_layer_3"
+                android:layout_alignEnd="@+id/figure_layer_3"
+                android:layout_alignParentStart="true"
+                android:text="UP location"
+                android:textSize="20sp"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/figure_layer_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="45dp"
+                android:text="FRONT location"
+                android:textSize="20sp"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/figure_layer_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:text="CLOCK location"
+                android:textSize="20sp"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/cl_line"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_above="@+id/figure_layer_4"
+                android:layout_marginBottom="23dp"
+                android:layout_marginStart="52dp"
+                android:layout_toEndOf="@+id/textView13"
+                android:background="@drawable/hand_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SIDE Sucess rate : "
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="20sp"
+                android:id="@+id/textView2" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/textView8"
+                android:text="null"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView2"
+                android:layout_marginTop="17dp"
+                android:text="UP Sucess rate : "
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="20sp"
+                android:id="@+id/textView4" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/textView5"
+                android:layout_alignStart="@+id/textView7"
+                android:text="null"
+                android:textSize="20sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView4"
+                android:layout_marginTop="21dp"
+                android:text="FRONT Sucess rate : "
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="20sp"
+                android:id="@+id/textView5" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView5"
+                android:layout_alignBottom="@+id/textView5"
+                android:layout_alignStart="@+id/textView6"
+                android:text="null"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView5"
+                android:layout_marginTop="23dp"
+                android:text="CLOCK Sucess rate : "
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView3"
+                android:layout_alignBottom="@+id/textView3"
+                android:layout_marginStart="16dp"
+                android:layout_toEndOf="@+id/textView3"
+                android:text="null"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/textView7"
+                android:layout_marginStart="18dp"
+                android:layout_toEndOf="@+id/textView7"
+                android:text="%"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/textView11"
+                android:layout_alignStart="@+id/textView9"
+                android:text="%"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/textView8"
+                android:layout_alignStart="@+id/textView10"
+                android:text="%"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/textView6"
+                android:layout_alignStart="@+id/textView12"
+                android:text="%"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout7"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/relativeLayout3"
+            android:layout_marginTop="402dp"
+            android:layout_toEndOf="@+id/imageView_1">
+
+            <TextView
+                android:id="@+id/sucess_manu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="68dp"
+                android:layout_toEndOf="@+id/Sucess_num"
+                android:text="Fail"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/fail_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/sucess_manu"
+                android:layout_alignBottom="@+id/sucess_manu"
+                android:layout_alignStart="@+id/gesture_manu"
+                android:layout_marginStart="113dp"
+                android:text="Success"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/percent_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/sucess_manu"
+                android:layout_alignBottom="@+id/sucess_manu"
+                android:layout_marginStart="76dp"
+                android:layout_toEndOf="@+id/sucess_manu"
+                android:text="Sucess rate"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/gesture_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:text="None"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/Sucess_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/fail_menu"
+                android:layout_alignParentBottom="true"
+                android:text="None"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/fail_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/sucess_manu"
+                android:layout_alignParentBottom="true"
+                android:text="None"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/percent_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/percent_menu"
+                android:layout_alignParentBottom="true"
+                android:text="None"
+                android:textSize="25sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_toEndOf="@+id/percent_num"
+                android:text=" %"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/gesture_manu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:text="Action"
+                android:textSize="20sp" />
+
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:id="@+id/sd_scroll"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:id="@+id/send_data_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:focusableInTouchMode="true"
+                android:textSize="15dp" />
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
