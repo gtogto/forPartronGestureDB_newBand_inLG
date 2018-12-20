@@ -30,7 +30,7 @@ Pre-requisites
 Screenshots
 -------------
 
-<img src="screenshots/1-main.png" height="400" alt="Screenshot"/> <img src="screenshots/2-detail.png" height="400" alt="Screenshot"/> 
+![image](https://user-images.githubusercontent.com/30851459/50263207-04763680-0458-11e9-8d9c-454ae43a2561.PNG)
 
 Getting Started
 ---------------
